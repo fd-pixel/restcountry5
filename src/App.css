@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+.Header {
+  height: 60px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
+  background-color: aqua;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-size: 1.2rem;
+}
+.Countrylist {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+.countrylist-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 500px;
+  background-color: #555;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+}
+img {
+  margin: 20px;
+  max-width: 150px;
+  height: auto;
+}
+.countrycapital {
+  margin: 10px 0;
+}
+.searchform {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 40px;
+  height: 20px;
+}
+input,
+button {
+  margin: 10px;
+  border: 2px solid rgb(76, 188, 202);
+  min-width: 5rem;
+  border-radius: 3px;
+  height: 2rem;
+  outline: none;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+button {
+  background-color: rgb(231, 248, 204);
+}
+button:hover {
+  background-color: rgb(76, 188, 202);
+
+  transition: all 0.5s ease;
+  box-shadow: 2px 2px 15px black;
 }
