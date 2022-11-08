@@ -44,7 +44,9 @@ const Main = () => {
             autoFocus
           />
 
-          <button type="submit">Search</button>
+          <button onSubmit={handleSubmit} autoFocus type="submit">
+            Search
+          </button>
         </form>
       </div>
       <div className="Countrylist">
@@ -57,8 +59,10 @@ const Main = () => {
               </div>
               <div className="countryinfo">
                 <p className="countryname">{country.name.official}</p>
-                <p className="countrycapital">{country.capital}</p>
-                <p className="countrpopulation">{country.population}</p>
+                <p className="countrycapital">Capital :{country.capital}</p>
+                <p className="countrpopulation">
+                  Population:{country.population}
+                </p>
               </div>
             </div>
           );

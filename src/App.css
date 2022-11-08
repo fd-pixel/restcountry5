@@ -40,8 +40,8 @@ body {
 }
 img {
   margin: 20px;
-  max-width: 150px;
-  height: auto;
+  max-height: 100px;
+  width: auto;
 }
 .countrycapital {
   margin: 10px 0;
