@@ -16,7 +16,7 @@ const Main = () => {
       );
       setCountries(response.data);
     } else {
-      alert("Please enter a country");
+      alert("Please enter a country name");
     }
   };
 
